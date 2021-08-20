@@ -1,0 +1,4 @@
+What can I add to this project:
+1) Add the sounds of tick-tock, when the timer is working.
+2) Instead of "meow" cat can say "The time to drink coffee" or something else.
+3) Also I can add a select to select the sound of the alert for timer.

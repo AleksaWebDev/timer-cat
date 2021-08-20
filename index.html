@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#9baacf">
+
+  <link type="image/png" sizes="16x16" rel="icon" href="icons/favicon-16x16.png">
+  <link type="image/png" sizes="32x32" rel="icon" href="icons/favicon-32x32.png">
+  <link type="image/png" sizes="96x96" rel="icon" href="icons/favicon-96x96.png">
+  <link type="image/png" sizes="120x120" rel="icon" href="icons/favicon-120x120.png">
+
+  <link rel="manifest" href="manifest.json">
+
+  <link sizes="57x57" rel="apple-touch-icon" href="icons/apple-touch-icon-57x57.png">
+  <link sizes="60x60" rel="apple-touch-icon" href="icons/apple-touch-icon-60x60.png">
+  <link sizes="72x72" rel="apple-touch-icon" href="icons/apple-touch-icon-72x72.png">
+  <link sizes="76x76" rel="apple-touch-icon" href="icons/apple-touch-icon-76x76.png">
+  <link sizes="114x114" rel="apple-touch-icon" href="icons/apple-touch-icon-114x114.png">
+  <link sizes="120x120" rel="apple-touch-icon" href="icons/favicon-120x120.png">
+  <link sizes="144x144" rel="apple-touch-icon" href="icons/apple-touch-icon-144x144.png">
+  <link sizes="152x152" rel="apple-touch-icon" href="icons/apple-touch-icon-152x152.png">
+  <link sizes="180x180" rel="apple-touch-icon" href="icons/apple-touch-icon-180x180.png">
+
+  <link color="#0000ff" rel="mask-icon" href="icons/safari-pinned-tab.svg">
+
+  <meta name="msapplication-config" content="browserconfig.xml">
+
+  <title>Timer-cat</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="switch-theme">
+    <input id="switch" type="checkbox">
+    <label for="switch"></label>
+  </div>
+
+  <div id="cat" class="cat">
+    <div class="cat__container">
+      <div class="cat__ear cat__left-ear"></div>
+      <div class="cat__ear cat__right-ear"></div>
+
+      <div class="cat__stain-small cat__stain-small-left"></div>
+      <div class="cat__stain-small cat__stain-small-right"></div>
+
+      <div id="cat__stain-big" class="cat__stain-big">
+        <!-- for animation of snore -->
+        <div id="snore-1" class="snore snore-1">Z</div>
+        <div id="snore-2" class="snore snore-2">Z</div>
+        <div id="snore-3" class="snore snore-3">Z</div>
+
+        <div class="cat__stain-small-bottom"></div>
+        <div id="left-eyeball" class="cat__left-eye">
+          <div id="left-eye" class="left-eye"></div>
+          <div id="left-eyelid" class="left-eyelid"></div>
+        </div>
+        <div class="cat__right-eye">
+          <div id="right-eye" class="right-eye"></div>
+          <div id="right-eyelid" class="right-eyelid"></div>
+        </div>
+
+        <div class="cat__nose"></div>
+
+        <div id="cat__left-mustache-top" class="cat__left-mustache-top"></div>
+        <div class="cat__left-mustache-bottom"></div>
+        <div class="cat__right-mustache-top"></div>
+        <div class="cat__right-mustache-bottom"></div>
+
+        <div class="timer">
+          <div class="tooltip">
+            <input id="hours" type="text" placeholder="00">
+            <span class="tooltip__text tooltip__text_left">Enter hours from 00 to 99</span>
+          </div>
+          <div id="alert" class="tooltip">
+            <input id="minutes" type="text" placeholder="00">
+            <span class="tooltip__text tooltip__text_bottom">Enter minutes from 00 to 59</span>
+          </div>
+          <div class="tooltip">
+            <input id="seconds" type="text" placeholder="00">
+            <span class="tooltip__text tooltip__text_right">Enter seconds from 00 to 59</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="btn" class="btn">Start</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
